@@ -1,9 +1,12 @@
+package cryptor
+
 class Cryptor(input: String, index: Int){
   private val list = "abcdefghijklmnopqrstuvwxyz".toCharArray
 
   def encrypt {
+    var temp: Int = 0
     val cypheredOutput = input.collect { case c =>
-      var temp = list.indexOf(c) + index
+      temp = list.indexOf(c) + index
       list(temp)
     }
 
