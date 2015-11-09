@@ -1,0 +1,28 @@
+testOnly
+exit
+testOnly QuickStartSpec
+exit
+test
+testOnly org.acme.secret.KillerAppSpec
+testOnly org.acme.secret.KillerAppSpec -- xonly
+exit
+run
+exit
+run
+exit
+run
+run hellow 2
+run sex5
+run sex 1
+run aaaaa 2
+exit
+run zz 1
+run xxxx 55
+run xxxx 10
+run xxxx 20
+run xxxx 25
+run xxxx 26
+run xxxx 27
+run xxxx 28
+run xxxx 29
+exit

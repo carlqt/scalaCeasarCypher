@@ -7,6 +7,9 @@ class Cryptor(input: String, index: Int){
     var temp: Int = 0
     val cypheredOutput = input.collect { case c =>
       temp = list.indexOf(c) + index
+      if (temp >= 26) {
+        temp -= 26
+      }
       list(temp)
     }
 
