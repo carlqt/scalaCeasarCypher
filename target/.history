@@ -26,3 +26,28 @@ run xxxx 27
 run xxxx 28
 run xxxx 29
 exit
+1 + 1
+compile
+clear
+cls
+exit
+compile
+run legs 1
+compile
+run legs 1
+run legs 5
+run a 1
+"hello" ++ "hi"
+compile
+run legs 2
+legs a 1
+run legs 1
+compile
+run legs 
+run legs 1
+run a 1
+run carl 1
+run carl 2
+run z 1
+run z 2
+run zzzz 6

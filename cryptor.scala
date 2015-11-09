@@ -5,18 +5,26 @@ class Cryptor(input: String, index: Int){
 
   def encrypt {
     var temp: Int = 0
-    val cypheredOutput = input.collect { case c =>
+    val output = input.collect { case c =>
       temp = list.indexOf(c) + index
-      if (temp >= 26) {
-        temp -= 26
-      }
-      list(temp)
+      list(newIndex(temp))
     }
 
-    println(s"Your new string is: $cypheredOutput")
+    println(s"Your new string is: $output")
   }
 
   def test {
     println("Test complete")
+  }
+
+  private def newIndex(temp: Int): Int = {
+    var i = temp
+
+    if (temp < 26) {
+      return temp
+    }else {
+      i = temp - 26
+      newIndex(i)
+    }
   }
 }
